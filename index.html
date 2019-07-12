@@ -93,7 +93,9 @@
           <span class="heading-primary--sub">is where life happens</span>
         </h1>
 
-        <a href="#section-tours" class="btn btn--white btn--animated">Discover our tours</a>
+        <a href="#section-tours" class="btn btn--white btn--animated"
+          >Discover our tours</a
+        >
       </div>
     </header>
     <main>
@@ -439,7 +441,19 @@
     </main>
     <footer class="footer">
       <div class="footer__logo-box">
-        <img src="img/logo-green-2x.png" alt="Full logo" class="footer__logo" />
+        <picture class="footer__logo">
+          <source
+            srcset="
+              img/logo-green-small-1x.png 1x,
+              img/logo-green-small-2x.png 2x
+            "
+            media="(max-width: 37.5em)"
+          />
+          <img
+            srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png x2"
+            alt="Full logo"
+          />
+        </picture>
       </div>
       <div class="row">
         <div class="col-1-of-2">
@@ -465,8 +479,9 @@
         </div>
         <div class="col-1-of-2">
           <p class="footer__copyright">
-            Built my website with <a href="#" class="footer__link">Jonas Schmedtmann</a> for
-            his online course
+            Built my website with
+            <a href="#" class="footer__link">Jonas Schmedtmann</a> for his
+            online course
             <a href="#" class="footer__link">Advanced CSS and Sass</a>.
             Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use
             this webpage for both personal and commercial use, but ONLY to claim
